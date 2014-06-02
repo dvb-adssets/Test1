@@ -6,7 +6,8 @@
 package hellothread;
 
 /**
- *
+ * Prints the sound a clock makes.
+ * 
  * @author Baronen
  */
 public class T1 implements Runnable {

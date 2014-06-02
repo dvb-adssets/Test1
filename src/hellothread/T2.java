@@ -6,7 +6,9 @@
 package hellothread;
 
 /**
- *
+ * This is a thread that prints a swedish christmas song.
+ * Good luck getting it out of your head now.
+ * 
  * @author Baronen
  */
 public class T2 extends Thread {
@@ -16,8 +18,16 @@ public class T2 extends Thread {
     public T2() {
         super();
         active = true;
+        start();
     }
 
+    /**
+     * Prints the message to the output and pauses the thread in the given
+     * amounts of milliseconds.
+     * 
+     * @param message       a String message
+     * @param milliSeconds  an int representing the pause in milliseconds
+     */
     private void printTime(String message, int milliSeconds) {
         System.out.println(message);
         try {
@@ -48,6 +58,9 @@ public class T2 extends Thread {
         printTime("", 500);
     }
 
+    /**
+     * Runs the song
+     */
     public void run() {
         while (active) {
             tippTapp();

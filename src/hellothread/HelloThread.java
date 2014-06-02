@@ -7,6 +7,8 @@
 package hellothread;
 
 /**
+ * Prints a clock, or an earwormy christmas song.
+ * Choose your poison... or don't.
  *
  * @author Baronen
  */
@@ -17,7 +19,6 @@ public class HelloThread {
      */
     public static void main(String[] args) {
         //new T1();
-        T2 t = new T2();
-        t.start();
+        new T2();
     }
 }
