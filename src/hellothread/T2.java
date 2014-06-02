@@ -25,8 +25,8 @@ public class T2 extends Thread {
      * Prints the message to the output and pauses the thread in the given
      * amounts of milliseconds.
      * 
-     * @param message       a String message
-     * @param milliSeconds  an int representing the pause in milliseconds
+     * @param message the message
+     * @param milliSeconds the pause time in milliseconds
      */
     private void printTime(String message, int milliSeconds) {
         System.out.println(message);
