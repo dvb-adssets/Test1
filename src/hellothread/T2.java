@@ -18,29 +18,34 @@ public class T2 extends Thread {
         active = true;
     }
 
-    private void tippTapp() {
-
-        System.out.println("Tipp...");
+    private void printTime(String message, int milliSeconds) {
+        System.out.println(message);
         try {
-            Thread.sleep(500);
-        } catch (InterruptedException ex) {
-            ex.printStackTrace();
-        }
-        System.out.println("Tapp...");
-        try {
-            Thread.sleep(500);
+            Thread.sleep(milliSeconds);
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         }
     }
 
+    private void tippTapp() {
+        printTime("Tipp", 500);
+        printTime("Tapp", 500);
+    }
+
     private void tippe() {
-        System.out.println("Tippe-");
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException ex) {
-            ex.printStackTrace();
-        }
+        printTime("Tippe-", 500);
+    }
+
+    private void endSong() {
+        printTime("Tipp...", 1000);
+        printTime("Tipp...", 1000);
+        printTime("Tapp", 500);
+        printTime("Tipp!", 500);
+        printTime("Tapp!", 500);
+    }
+
+    private void pauseSec() {
+        printTime("", 500);
     }
 
     public void run() {
@@ -50,6 +55,8 @@ public class T2 extends Thread {
             tippe();
             tippe();
             tippTapp();
+            endSong();
+            pauseSec();
         }
     }
 }
