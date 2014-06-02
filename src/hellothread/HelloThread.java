@@ -20,7 +20,5 @@ public class HelloThread {
     public static void main(String[] args) {
         //new T1();
         new T2();
-        brrrrrrlllll
-                wooooaaaah MY GOD!!!11
     }
 }

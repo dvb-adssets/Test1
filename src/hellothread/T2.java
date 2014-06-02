@@ -13,7 +13,7 @@ package hellothread;
  */
 public class T2 extends Thread {
 
-    private boolean active;
+    boolean active;
 
     public T2() {
         super();
