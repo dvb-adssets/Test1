@@ -67,7 +67,7 @@ public class T2 extends Thread {
             tippTapp();
             tippe();
             tippe();
-            broed(); // I snuck in here, muahahah!
+            broed();
             oVatten();
             tippTapp();
             endSong();
