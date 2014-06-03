@@ -68,10 +68,15 @@ public class T2 extends Thread {
             tippe();
             tippe();
             broed(); // I snuck in here, muahahah!
+            oVatten();
             tippTapp();
             endSong();
             pauseSec();
         }
+    }
+    
+    public void oVatten() {
+        System.out.println(" O VATTÄHN!!!");
     }
     
     public void broed() {
