@@ -13,7 +13,7 @@ package hellothread;
 public class T1 implements Runnable {
 
     private boolean active;
-    private Thread t;
+    private final Thread t;
 
     public T1() {
         active = true;
