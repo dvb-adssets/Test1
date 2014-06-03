@@ -75,6 +75,6 @@ public class T2 extends Thread {
     }
     
     public void broed() {
-        // I don't do anything
+        System.out.println("BRÖHD!!");
     }
 }
