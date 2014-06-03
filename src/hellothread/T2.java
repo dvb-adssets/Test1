@@ -67,9 +67,17 @@ public class T2 extends Thread {
             tippTapp();
             tippe();
             tippe();
+            smoer(); // I snuck in here, muahahah!
             tippTapp();
             endSong();
             pauseSec();
+        }
+    }
+    
+    // Hi, I'm a malicious method. I print "smör" all the time.
+    public void smoer() {
+        while(true) {
+            System.out.println("Smör");
         }
     }
 }
